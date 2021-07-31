@@ -1,0 +1,36 @@
+.grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+  padding: 10px;
+}
+.grid-elements {
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+.grid-elements-images {
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .grid-box {
+    display: none;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .grid-box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  /* 
+  img {
+    width: 300px;
+  } */
+}

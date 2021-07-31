@@ -1,0 +1,164 @@
+/* ------------------------Body element----------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  /* background-color: black; */
+}
+
+/* ------------------------header element----------------------------- */
+header img {
+  width: 80px;
+}
+
+img {
+  width: 85%;
+}
+/* 
+nav {
+  background-color: whitesmoke;
+  padding: 5px;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline;
+  list-style-type: none;
+  padding: 10px;
+} */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------main element----------------------------- */
+
+.logo {
+  display: none;
+  width: 40px;
+}
+main {
+  padding: 3% 0%;
+  background-color: #dddfe0;
+  text-align: center;
+  color: black;
+}
+
+main section {
+  text-align: center;
+  color: black;
+  background: transparent;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.navbar {
+  padding: 5px;
+}
+
+button {
+  margin-top: 50px;
+  padding: 12px 73px 12px 72px;
+  background-color: #292d33;
+  color: white;
+  border-radius: 6px;
+}
+
+/* ------------------------footer element----------------------------- */
+.medialogo {
+  width: 20px;
+  display: inline;
+}
+.pages a {
+  display: block;
+  text-decoration: none;
+  padding: 2px;
+  color: whitesmoke;
+}
+footer {
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+  color: whitesmoke;
+  background-color: #333333;
+}
+
+footer div {
+  padding: 20px;
+}
+
+/* ------------Media------------------- */
+@media screen and (min-width: 950px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    /* background-color: white; */
+    background-color: rgb(155, 80, 80);
+  }
+
+  .content {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+
+  .logo {
+    display: block;
+    width: 70px;
+  }
+
+  .grid-elements {
+    width: 100%;
+    /* height: 500px; */
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: whitesmoke;
+    background-color: #333333;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 10px;
+    text-align: left;
+  }
+  .navbar {
+    text-align: right;
+  }
+  .navbar li {
+    padding: 20px;
+  }
+  #logogym {
+    margin: auto;
+  } */
+
+  .pages a {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-style: italic;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    font-size: 12px;
+  }
+}

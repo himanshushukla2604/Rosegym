@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body,
+    html {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      
+    }
+    body{
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* .bg-image {
+      /* The image used */
+    /* background-image: url("clients/people-2604149_1280.jpg"); */
+
+    /* Add the blur effect */
+    /* filter: blur(3px);
+      -webkit-filter: blur(3px); */
+
+    /* Full height */
+    /* height: 100%; */
+
+    /* Center and scale the image nicely */
+    /* background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }  */
+
+    /* Position text in the middle of the page/image */
+    .bg-text {
+      
+      color: white;
+      font-weight: bold;
+      /* border: 3px solid #f1f1f1; */
+
+      position: absolute;
+      top: 20%; 
+      left: 10%;
+      margin: auto;
+      width: 80%;
+      padding: 7px;
+      text-align: center;
+    }
+    form {
+      color: white;
+      border-radius: 10px;
+
+      max-width: 300px;
+      height: 300px;
+      margin: auto;
+      padding: 10px;
+      background-color: rgb(224, 219, 211);
+      /* border: 3px solid black; */
+    }
+
+    form div {
+      padding: 5px;
+      margin: 6px;
+      color: black;
+      text-align: left;
+    }
+    input {
+      display: block;
+      width: 99%;
+      padding: 9px;
+      /* margin: 3px 20px; */
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 10px;
+      margin: 35px auto;
+      background-color: gray;
+      width: 85%;
+      border-radius: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color:black;
+    }
+    video {
+      /* width: 1vw; */
+      /* height: 100%; */
+      /* width: 100%; */
+      overflow: hidden;
+    }
+  </style>
+    <!-- <div class="bg-image"></div> -->
+
+    <video
+      src="videos/production ID_4367571.mp4"
+      type="video/mart"
+      autoplay
+      muted
+    ></video>
+    <div class="bg-text">
+      <h1>Log in</h1>
+      <form action="">
+        <div>
+          <label for="Username">Email</label>
+          <input type="email" name="email" placeholder="" id="username" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" />
+        </div>
+        <button><a href="index.html">Log in</a></button>
+      </form>
+    </div>
+  </body>
+</html>

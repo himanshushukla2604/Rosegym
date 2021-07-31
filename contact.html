@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="nav.css" />
+  </head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      background-image: url("images/cross-fit-1126999_1920.jpg");
+    }
+    /* --------------------nav-------------- */
+    /* nav {
+      background-color: whitesmoke;
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      /* padding: ; 
+    }
+    .navbar {
+      text-align: right;
+    }
+    .navbar li {
+      display: inline;
+      list-style-type: none;
+      padding: 20px;
+    } */
+    nav img {
+      width: 70px;
+      background-color: whitesmoke;
+    }
+    a {
+      text-decoration: none;
+    }
+    h1 {
+      margin: auto;
+      text-align: center;
+    }
+    form {
+      max-width: 800px;
+      margin: auto;
+      background-color: rgb(235, 231, 231);
+      margin: 42px auto;
+      padding: 20px;
+    }
+    label {
+      padding-right: 30px;
+    }
+
+    input[type="text"],
+    [type="email"],
+    [type="number"],
+    [type="password"] {
+      display: block;
+      padding: 5px;
+      margin: 5px;
+      width: 95%;
+      border: 3px solid white;
+      /* border-radius: 10px; */
+    }
+
+    textarea {
+      width: 95%;
+      padding: 5px;
+      margin: 5px;
+      border: 3px solid white;
+    }
+
+    div {
+      padding: 10px;
+      margin: 4px 0;
+    }
+
+    .radio {
+      background-color: white;
+      width: 95%;
+      margin: 5px;
+    }
+
+    input[type="radio"] {
+      display: inline;
+      margin: 5px;
+    }
+    /* ----------payment-------------- */
+
+    select {
+      width: 95%;
+      padding: 5px;
+      margin: 5px;
+      border: 3px solid white;
+    }
+
+    /* -------------Button----------- */
+    button {
+      margin: auto;
+      padding: 15px;
+      background-color: gray;
+      border: gray;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 550px) {
+      body {
+        font-size: 12px;
+      }
+    }
+  </style>
+  <body>
+    <nav>
+      <div>
+        <img src="images/logo3.jpg" alt="logo" />
+      </div>
+
+      <div>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="products.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <form action="">
+        <h1>Registration Form</h1>
+        <div>
+          <label for="Name">Name :</label>
+          <input type="text" class="formtext" name="email" />
+        </div>
+
+        <div>
+          <label for="email">Email :</label>
+          <input type="email" class="formtext" name="email" />
+        </div>
+
+        <div>
+          <legend>Gender :</legend>
+
+          <div class="radio">
+            Male
+            <input
+              type="radio"
+              name="hi"
+              id="radio1"
+              value="male"
+              text="male"
+            />
+
+            Female
+            <input
+              type="radio"
+              name="hi"
+              id="radio1"
+              value="female"
+              text="female"
+            />
+
+            Other
+            <input
+              type="radio"
+              name="hi"
+              id="radio1"
+              value="other"
+              text="other"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="email">Email :</label>
+          <input type="email" class="formtext" name="email" />
+        </div>
+
+        <div class="Address">
+          <legend>Address :</legend>
+          <textarea name="Address" id="" cols="30" rows="1"></textarea>
+        </div>
+
+        <div class="massage">
+          <legend>Massage :</legend>
+          <textarea name="Massage" id="" cols="30" rows="5"></textarea>
+        </div>
+
+        <h2>Payment Information</h2>
+        <div class="card-type">
+          <legend>Card :</legend>
+          <select name="card-type" id="card">
+            <option value="placeholder">----Select card type----</option>
+            <option value="visa">Visa</option>
+            <option value="rupe">Rupe</option>
+            <option value="mastercard">Master Card</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="CardNumber">Card Number :</label>
+          <input type="number" name="cardNumber" id="cardNumber" />
+        </div>
+
+        <div>
+          <label for="CVV">CVV :</label>
+          <input type="password" name="CVV" id="cvv" />
+        </div>
+        <button>Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

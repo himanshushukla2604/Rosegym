@@ -1,0 +1,36 @@
+nav {
+  background-color: whitesmoke;
+  padding: 5px;
+  text-align: center;
+}
+.navbar {
+  padding: 1.5px;
+}
+#contact {
+  display: none;
+}
+
+.navbar li {
+  display: inline;
+  list-style-type: none;
+  padding: 9px;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 10px;
+    text-align: left;
+  }
+  .navbar {
+    text-align: right;
+  }
+  .navbar li {
+    padding: 20px;
+  }
+
+  #logogym {
+    margin: auto;
+  }
+}

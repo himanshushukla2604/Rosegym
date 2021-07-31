@@ -1,0 +1,55 @@
+.trainer {
+  clear: left;
+  width: 90%;
+  margin: auto;
+}
+.train {
+  max-width: 340px;
+  border-radius: 50%;
+}
+.element {
+  padding: 10px;
+  margin: 10px;
+  background-color: thistle;
+  border-radius: 30px;
+}
+
+.element img {
+  display: block;
+  margin: auto;
+}
+
+.element-2 {
+  padding: 10px;
+  margin: 10px;
+  text-align: right;
+}
+
+.element-2 img {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .element img {
+    display: block;
+    float: left;
+    shape-outside: ellipse(50% 50%);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .element-2 img {
+    /* display: block; */
+    float: right;
+    shape-outside: ellipse(50% 50%);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  img {
+    width: 95%;
+  }
+}
